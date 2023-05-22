@@ -31,8 +31,8 @@ graphic_dt = np.dtype(
 # Tile struct used for statistically defined tile data
 tile_dt = np.dtype(
   [
-    ('walkable', np.bool), # True if it can be walked over
-    ('transparent', np.bool), # True if it doesn't block FOV
+    ('walkable', bool), # True if it can be walked over
+    ('transparent', bool), # True if it doesn't block FOV
     ('dark', graphic_dt), # Graphics for when not in FOV
     ("light", graphic_dt),  # Graphics for when the tile is in FOV.
     ('tile_class', np.unicode_, 16),
